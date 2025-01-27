@@ -1,24 +1,22 @@
 $(document).ready(function () {
-
-
   $(window).bind("scroll", function () {
     if ($(this).scrollTop() > 50) {
       $(".arrow-up").fadeIn(400);
     } else {
-      $('.arrow-up').fadeOut(400);
+      $(".arrow-up").fadeOut(400);
     }
   });
   // window.onload = function () {
   //   myFunction();
   // }
-  setTimeout(function(){ 
-    $('.load').css({
-      display: "none"
-    }); 
+  setTimeout(function () {
+    $(".load").css({
+      display: "none",
+    });
   }, 1300);
-    // function myFunction() {
-    
-    // }
+  // function myFunction() {
+
+  // }
   $(".ham").on("click", function () {
     $(".main-ul-none").css({
       display: "block",
@@ -30,7 +28,7 @@ $(document).ready(function () {
       display: "none",
     });
     $("html").css({
-      overflow: "hidden"
+      overflow: "hidden",
     });
   });
   $(".close-btn-ham").on("click", function () {
@@ -68,5 +66,11 @@ $(document).ready(function () {
     $(".arrow-up").css({
       display: "block",
     });
+  });
+  $(".main-ul .border-li").on("click", function () {
+    const link = $(this).find("a");
+    if (link.length) {
+      window.location = link.attr("href");
+    }
   });
 });
