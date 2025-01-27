@@ -64,6 +64,16 @@
 	<link rel="shortcut icon" type="image/x-icon"
 		href="img/png-transparent-separative-sewer-sewerage-sewage-wastewater-stormwater-streetlight-text-logo-waste.png" />
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H52X2RD2Q3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-H52X2RD2Q3');
+	</script>
+
 </head>
 
 <body>
@@ -557,6 +567,29 @@
 			tabindex="0"></iframe>
 	</footer>
 	<script src="js/script.js"></script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyBVHzX8bx3KogTX-E04WMQ2gBKnj_mtjKE",
+			authDomain: "betonni-kiltsya-lviv.firebaseapp.com",
+			projectId: "betonni-kiltsya-lviv",
+			storageBucket: "betonni-kiltsya-lviv.firebasestorage.app",
+			messagingSenderId: "182859547366",
+			appId: "1:182859547366:web:b257579cecde5151737127",
+			measurementId: "G-H52X2RD2Q3"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
 
 </body>
 
